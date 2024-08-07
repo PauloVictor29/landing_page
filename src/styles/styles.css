@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('testimonials.css');
+@import url('footer.css');
+
+:root {
+    --color-primary-1: #F7F3E9; /* Bege Claro para fundo principal */
+    --color-primary-2: #D57A3D; /* Terracota para acento principal */
+    --color-primary-3: #6D4C41; /* Marrom Vinho para acento secundário */
+    --color-primary-heart: #A94D1F; /* Terracota Escuro para o coração */
+    --color-neutral-1: #3E2723; /* Marrom Escuro para texto principal */
+    --color-neutral-2: #FFFFFF; /* Branco para fundo de seções */
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Adicione essa regra ao seu CSS existente */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-primary-1); /* Fundo bege claro */
+    color: var(--color-neutral-1); /* Texto marrom escuro */
+}
+
+section {
+    padding: 28px 8%;
+    background-color: var(--color-neutral-2); /* Fundo branco para seções */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-2); /* Fundo terracota */
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    color: var(--color-neutral-2); /* Texto branco */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease, box-shadow .3s ease;
+}
+
+.btn-default:hover {
+    background-color: var(--color-primary-3); /* Fundo marrom vinho */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-neutral-2); /* Fundo branco */
+    font-size: 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-primary-2); /* Texto terracota */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease, transform .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.section-title {
+    color: var(--color-primary-2); /* Terracota */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: var(--color-primary-3); /* Marrom vinho */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.heart-icon {
+    color: var(--color-primary-heart); /* Terracota Escuro */
+}
